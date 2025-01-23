@@ -1,0 +1,8 @@
+x = float(input())  # Начальный пробег
+y = float(input())  # Целевой пробег
+day = 1  # Начинаем с первого дня
+current_distance = x  # Пробег в первый день
+while current_distance < y:
+    day += 1    
+    current_distance *= 1.1  # Каждый день пробег увеличивается на 10%
+print(day)
